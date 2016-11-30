@@ -18,7 +18,7 @@ let Nav = React.createClass({
                                 更多 <span className="caret"></span>
                             </a>
                             <ul style={style} className="dropdown-menu" role="menu">
-                                <li><a href="#">技术</a></li>
+                                <li><a href="#">技术自我打分</a></li>
                                 <li><a href="#">未来规划</a></li>
                                 <li className="divider"></li>
                                 <li><a href="https://github.com/dearzoe"  style={style}>MyGitHub</a></li>
@@ -44,9 +44,16 @@ let Jumbotron = React.createClass({
        return   <div className="jumbotron">
            <h1 style={styleFuture}>Hello,MyFuture!</h1>
            <p style={styleResume}>This is my resume for introduce myself~</p>
-           <p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+           <p style={styleResume}><a className="btn btn-primary btn-lg btn-success" href="#" role="button">start</a></p>
        </div>
     }
+});
+let FormMe = React.createClass({
+   render(){
+       return <div>
+
+              </div>
+   }
 });
 
 
@@ -61,6 +68,9 @@ let AppMain=React.createClass({
                    <Nav/>
                 </div>
                 <Jumbotron/>
+                <div className="container">
+
+                </div>
              </div>
     }
 });
