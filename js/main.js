@@ -11,14 +11,14 @@ let Nav = React.createClass({
         };
             return <ul className="nav nav-pills" role="tablist">
                         <li role="presentation" className="active" style={styleActive}><a href="#">主页</a></li>
-                        <li role="presentation"><a href="#">自我介绍</a></li>
-                        <li role="presentation"><a href="#">项目经验</a></li>
+                        <li role="presentation"><a href="#from">自我介绍</a></li>
+                        <li role="presentation"><a href="#project">项目经验</a></li>
                         <li role="presentation" className="dropdown">
                             <a className="dropdown-toggle" data-toggle="dropdown" href="#">
                                 更多 <span className="caret"></span>
                             </a>
                             <ul style={style} className="dropdown-menu" role="menu">
-                                <li><a href="#">技术自我打分</a></li>
+                                <li><a href="#technology">技术自我打分</a></li>
                                 <li><a href="#">未来规划</a></li>
                                 <li className="divider"></li>
                                 <li><a href="https://github.com/dearzoe"  style={style}>MyGitHub</a></li>
@@ -61,7 +61,7 @@ let FormMe = React.createClass({
                  <div className="panel panel-default">
                    <div className="panel-heading">自我介绍</div>
                    <div className="panel-body">
-                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="" style={more}>更多/技术自我打分</a></p>
+                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more}>更多/技术自我打分</a></p>
                  </div>
                  <table className="table table-bordered">
                      <thead>
@@ -103,13 +103,12 @@ let FormMe = React.createClass({
 });
 let Project = React.createClass({
     render(){
-
-       return<div className="row">
+       return<div id="project" className="row">
                <div className="col-sm-6 col-md-4">
                    <div className="thumbnail">
                        <img src="./img/3.png" alt="..." />
                            <div className="caption">
-                               <h3>中车BIM</h3>
+                               <h3>BIM</h3>
                                <p>企业内部项目</p>
                                <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
                            </div>
@@ -138,7 +137,53 @@ let Project = React.createClass({
            </div>
     }
 });
+let Technology = React.createClass({
+    render(){
+        let style50={
+            "width":"50%"
+        };
+        let style60={
+            "width":"60%"
+        };
+        let style70={
+            "width":"70%"
+        };
+        let style80={
+            "width":"80%"
+        };
+        return <div id="technology">
+            <div className="panel page-header">自我评价各项技能熟练度</div>
+            <div className="progress">
+                <div className="progress-bar progress-bar-success " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={style80}>
+                    javascript+jQuery
+                </div>
+            </div>
+            <div className="progress">
+                <div className="progress-bar progress-bar-info " role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style={style80}>
+                    html5+css3+Bootstrap
+                </div>
+            </div>
+            <div className="progress">
+                <div className="progress-bar progress-bar-warning " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={style70}>
+                    React+React-Router+Easyui
+                </div>
+            </div>
+            <div className="progress">
+                <div className="progress-bar progress-bar-danger " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={style60}>
+                    gulp
+                </div>
+            </div>
+            <div className="panel panel-footer">还有一些了解平时有关注过的,也能简单使用
+                <span className="label label-default">Angule1</span>
+                <span className="label label-primary">Vue</span>
+                <span className="label label-success">node</span>
+                <span className="label label-info">webpack</span>
+                <span className="label label-warning">Zepto</span>
+                <span className="label label-danger">Swiper</span></div>
 
+        </div>
+    }
+});
 
 
 
@@ -155,6 +200,7 @@ let AppMain=React.createClass({
                 <div className="container">
                    <FormMe/>
                    <Project/>
+                   <Technology/>
                 </div>
              </div>
     }
