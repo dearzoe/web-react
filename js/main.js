@@ -103,17 +103,38 @@ let FormMe = React.createClass({
 });
 let Project = React.createClass({
     render(){
-       return<div class="row">
-               <div class="col-sm-6 col-md-4">
-                   <div class="thumbnail">
-                       <img data-src="holder.js/300x300" alt="..." />
-                           <div class="caption">
-                               <h3>Thumbnail label</h3>
-                               <p>...</p>
-                               <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+
+       return<div className="row">
+               <div className="col-sm-6 col-md-4">
+                   <div className="thumbnail">
+                       <img src="./img/3.png" alt="..." />
+                           <div className="caption">
+                               <h3>中车BIM</h3>
+                               <p>企业内部项目</p>
+                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
                            </div>
                    </div>
-               </div>
+                   </div>
+                   <div className="col-sm-6 col-md-4">
+                       <div className="thumbnail">
+                           <img src="./img/2.png" alt="..." />
+                           <div className="caption">
+                               <h3>MDM3.0</h3>
+                               <p>企业内部项目</p>
+                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+                           </div>
+                       </div>
+                   </div>
+                   <div className="col-sm-6 col-md-4">
+                       <div className="thumbnail">
+                           <img src="./img/1.jpg" alt="..." />
+                           <div className="caption">
+                               <h3>BOMCenter</h3>
+                               <p>企业内部项目</p>
+                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+                           </div>
+                       </div>
+                   </div>
            </div>
     }
 });

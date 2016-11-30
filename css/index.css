@@ -19,3 +19,8 @@ a:hover{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+.project{
+    float: left;
+    font-size: 10px;
+    color: #dddddd;
+}
