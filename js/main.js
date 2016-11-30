@@ -19,7 +19,7 @@ let Nav = React.createClass({
                             </a>
                             <ul style={style} className="dropdown-menu" role="menu">
                                 <li><a href="#technology">技术自我打分</a></li>
-                                <li><a href="#">未来规划</a></li>
+                                <li><a href="#future">未来规划</a></li>
                                 <li className="divider"></li>
                                 <li><a href="https://github.com/dearzoe"  style={style}>MyGitHub</a></li>
                             </ul>
@@ -110,7 +110,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BIM</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button">Button</a></p>
                            </div>
                    </div>
                    </div>
@@ -120,7 +120,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>MDM3.0</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after"  role="button">Button</a></p>
                            </div>
                        </div>
                    </div>
@@ -130,7 +130,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BOMCenter</h3>
                                <p>企业内部项目</p>
-                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after" >Button</a></p>
                            </div>
                        </div>
                    </div>
@@ -184,8 +184,52 @@ let Technology = React.createClass({
         </div>
     }
 });
+let Future =React.createClass({
+    render(){
+        return <div id="future">
+                 <div className="panel page-header">
+                     对于未来的规划
+                 </div>
+                 <div className="panel page-body">
+                     首先是先是对未来的工作的一个期望，就是希望自己能够长时间在一家公司能够不断的进步，以及想不断地的挑战自己，同时考取一些证书，像PMP之类的，并且与公司共同成长。
+                 </div>
+               </div>
+    }
+});
+let Footer = React.createClass({
+    render(){
+        let style={
+            "border-top": "1px solid #e5e5e5",
+            "background": "#202020",
+            "color":"#FFFFFF",
+            "text-align":"center"
+        };
+        let ulStyle={
+            "list-style":"none"
+        };
+        let end={
+            "float":"right"
+        };
+        return <div style={style} className="main-footer" role="contentinfo">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                 <h4>相关网站链接</h4>
+                                 <ul style={ulStyle}>
+                                     <li><a href="http://www.bootcss.com/">Bootstrap中文网</a></li>
+                                     <li><a href="http://www.crrcgc.cc/g11719.aspx">中车官网</a></li>
+                                     <li><a href="https://facebook.github.io/react/">React</a></li>
+                                     <li><a href="https://github.com/">GitHub</a></li>
+                                 </ul>
+                            </div>
+                            <div className="col-lg-6">
 
-
+                            </div>
+                        </div><span class="label label-default" style={end}>@huwenzhe 2016.12.1 02:09</span>
+                    </div>
+               </div>
+    }
+});
 
 
 
@@ -201,7 +245,9 @@ let AppMain=React.createClass({
                    <FormMe/>
                    <Project/>
                    <Technology/>
+                   <Future/>
                 </div>
+                <Footer/>
              </div>
     }
 });
