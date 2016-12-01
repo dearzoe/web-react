@@ -10,18 +10,18 @@ let Nav = React.createClass({
             "background":"#5bbc2e"
         };
             return <ul className="nav nav-pills" role="tablist">
-                        <li role="presentation" className="active" style={styleActive}><a href="#">主页</a></li>
-                        <li role="presentation"><a href="#from">自我介绍</a></li>
-                        <li role="presentation"><a href="#project">项目经验</a></li>
+                        <li role="presentation" className="active" style={styleActive}><a href="#" target="_blank">主页</a></li>
+                        <li role="presentation"><a href="#from" target="_blank">自我介绍</a></li>
+                        <li role="presentation"><a href="#project" target="_blank">项目经验</a></li>
                         <li role="presentation" className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <a className="dropdown-toggle" data-toggle="dropdown" target="_blank" href="#">
                                 更多 <span className="caret"></span>
                             </a>
                             <ul style={style} className="dropdown-menu" role="menu">
-                                <li><a href="#technology">技术自我打分</a></li>
-                                <li><a href="#future">未来规划</a></li>
+                                <li><a href="#technology" target="_blank">技术自我打分</a></li>
+                                <li><a href="#future" target="_blank">未来规划</a></li>
                                 <li className="divider"></li>
-                                <li><a href="https://github.com/dearzoe"  style={style}>MyGitHub</a></li>
+                                <li><a href="https://github.com/dearzoe"  style={style} target="_blank">MyGitHub</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -44,7 +44,7 @@ let Jumbotron = React.createClass({
        return   <div className="jumbotron">
            <h1 style={styleFuture}>Hello,MyFuture!</h1>
            <p style={styleResume}>This is my resume for introduce myself~</p>
-           <p style={styleResume}><a className="btn btn-primary btn-lg btn-success" href="#from" role="button">start</a></p>
+           <p style={styleResume}><a className="btn btn-primary btn-lg btn-success" href="#from" role="button" target="_blank">start</a></p>
        </div>
     }
 });
@@ -61,7 +61,7 @@ let FormMe = React.createClass({
                  <div className="panel panel-default">
                    <div className="panel-heading">自我介绍</div>
                    <div className="panel-body">
-                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more}>更多/技术自我打分</a></p>
+                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more} target="_blank">更多/技术自我打分</a></p>
                  </div>
                  <table className="table table-bordered">
                      <thead>
@@ -110,7 +110,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BIM</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button" target="_blank">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button" target="_blank">Button</a></p>
                            </div>
                    </div>
                    </div>
@@ -120,7 +120,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>MDM3.0</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after"  role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button" target="_blank">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after" target="_blank" role="button">Button</a></p>
                            </div>
                        </div>
                    </div>
@@ -130,7 +130,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BOMCenter</h3>
                                <p>企业内部项目</p>
-                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after" >Button</a></p>
+                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button" target="_blank">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after"  target="_blank">Button</a></p>
                            </div>
                        </div>
                    </div>
@@ -216,10 +216,10 @@ let Footer = React.createClass({
                             <div className="col-lg-12">
                                  <h4>相关网站链接</h4>
                                  <ul style={ulStyle}>
-                                     <li><a href="http://www.bootcss.com/">Bootstrap中文网</a></li>
-                                     <li><a href="http://www.crrcgc.cc/g11719.aspx">中车官网</a></li>
-                                     <li><a href="https://facebook.github.io/react/">React</a></li>
-                                     <li><a href="https://github.com/">GitHub</a></li>
+                                     <li><a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+                                     <li><a href="http://www.crrcgc.cc/g11719.aspx" target="_blank">中车官网</a></li>
+                                     <li><a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank">React</a></li>
+                                     <li><a href="https://github.com/" target="_blank">GitHub</a></li>
                                  </ul>
                             </div>
                             <div className="col-lg-6">
