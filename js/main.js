@@ -149,7 +149,10 @@ let ProjectFrom=React.createClass({
                       <li role="presentation" className="active"><a href="#home" role="tab" data-toggle="tab">金大地</a></li>
                       <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">嘟嘟医生</a></li>
                       <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">立川离心机</a></li>
-                      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+                      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">益步</a></li>
+                      <li role="presentation"><a href="#payun" role="tab" data-toggle="tab">帕云</a></li>
+                      <li role="presentation"><a href="#hulu" role="tab" data-toggle="tab">万达因</a></li>
+                      <li role="presentation"><a href="#shouji" role="tab" data-toggle="tab">肖邦</a></li>
                   </ul>
                   <div className="tab-content">
                       <div role="tabpanel" className="tab-pane active" id="home">
@@ -158,7 +161,7 @@ let ProjectFrom=React.createClass({
                               <tr>
                                   <td>名称</td>
                                   <td>职责</td>
-                                  <td>描述</td>
+                                  <td>项目介绍</td>
                                   <td>域名</td>
                               </tr>
                               </tbody>
@@ -178,7 +181,7 @@ let ProjectFrom=React.createClass({
                               <tr>
                                   <td>名称</td>
                                   <td>职责</td>
-                                  <td>描述</td>
+                                  <td>项目介绍</td>
                                   <td>域名</td>
                               </tr>
                               </tbody>
@@ -198,7 +201,7 @@ let ProjectFrom=React.createClass({
                               <tr>
                                   <td>名称</td>
                                   <td>职责</td>
-                                  <td>描述</td>
+                                  <td>项目介绍</td>
                                   <td>域名</td>
                               </tr>
                               </tbody>
@@ -218,16 +221,76 @@ let ProjectFrom=React.createClass({
                               <tr>
                                   <td>名称</td>
                                   <td>职责</td>
-                                  <td>描述</td>
+                                  <td>项目介绍</td>
                                   <td>域名</td>
                               </tr>
                               </tbody>
                               <tbody>
                               <tr>
-                                  <td>金大地地产</td>
+                                  <td>益步</td>
                                   <td>根据psd图纸实现web页面以及js</td>
                                   <td><a href="http://www.elboo.cn/list.php?pid=1&ty=9" target="_blank">作为德国品牌，ELBOO产品秉承德国精益求精... </a></td>
                                   <td><a href="http://www.elboo.cn/" target="_blank">http://www.elboo.cn/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div role="tabpanel" className="tab-pane" id="payun">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>项目介绍</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>帕云医疗网站</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.pdhospital.cn/list.php?pid=2&ty=8" target="_blank">北京帕云医疗科技有限公司创立于2015年8月... </a></td>
+                                  <td><a href="http://www.pdhospital.cn/" target="_blank">http://www.elboo.cn/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div role="tabpanel" className="tab-pane" id="hulu">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>项目介绍</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>万达因生物医学技术有限责任公司</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.wondergen.com.cn/list.php?pid=1&ty=10" target="_blank">北京万达因生物医学技术有限责任公司成立于... </a></td>
+                                  <td><a href="http://www.wondergen.com.cn/" target="_blank">http://www.wondergen.com.cn/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div role="tabpanel" className="tab-pane" id="shouji">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>项目介绍</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>肖邦</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.elboo.cn/list.php?pid=1&ty=9" target="_blank">手机h5页面以及PC宣传页... </a></td>
+                                  <td><a href="http://www.xiaobang.cc/" target="_blank">http://www.xiaobang.cc/</a></td>
                               </tr>
                               </tbody>
                           </table>
@@ -251,6 +314,7 @@ let Technology = React.createClass({
             "width":"80%"
         };
         return <div id="technology">
+            <div className="page-header"></div>
             <div className="panel page-header">自我评价各项技能熟练度</div>
             <div className="progress">
                 <div className="progress-bar progress-bar-success " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={style80}>
