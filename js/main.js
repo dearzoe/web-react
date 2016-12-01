@@ -10,16 +10,16 @@ let Nav = React.createClass({
             "background":"#5bbc2e"
         };
             return <ul className="nav nav-pills" role="tablist">
-                        <li role="presentation" className="active" style={styleActive}><a href="#" target="_blank">主页</a></li>
-                        <li role="presentation"><a href="#from" target="_blank">自我介绍</a></li>
-                        <li role="presentation"><a href="#project" target="_blank">项目经验</a></li>
+                        <li role="presentation" className="active" style={styleActive}><a href="#">主页</a></li>
+                        <li role="presentation"><a href="#from">自我介绍</a></li>
+                        <li role="presentation"><a href="#project">项目经验</a></li>
                         <li role="presentation" className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" target="_blank" href="#">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href="#">
                                 更多 <span className="caret"></span>
                             </a>
                             <ul style={style} className="dropdown-menu" role="menu">
-                                <li><a href="#technology" target="_blank">技术自我打分</a></li>
-                                <li><a href="#future" target="_blank">未来规划</a></li>
+                                <li><a href="#technology">技术自我打分</a></li>
+                                <li><a href="#future">未来规划</a></li>
                                 <li className="divider"></li>
                                 <li><a href="https://github.com/dearzoe"  style={style} target="_blank">MyGitHub</a></li>
                             </ul>
@@ -44,7 +44,7 @@ let Jumbotron = React.createClass({
        return   <div className="jumbotron">
            <h1 style={styleFuture}>Hello,MyFuture!</h1>
            <p style={styleResume}>This is my resume for introduce myself~</p>
-           <p style={styleResume}><a className="btn btn-primary btn-lg btn-success" href="#from" role="button" target="_blank">start</a></p>
+           <p style={styleResume}><a className="btn btn-primary btn-lg btn-success" href="#from" role="button">start</a></p>
        </div>
     }
 });
@@ -61,7 +61,7 @@ let FormMe = React.createClass({
                  <div className="panel panel-default">
                    <div className="panel-heading">自我介绍</div>
                    <div className="panel-body">
-                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more} target="_blank">更多/技术自我打分</a></p>
+                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more}>更多/技术自我打分</a></p>
                  </div>
                  <table className="table table-bordered">
                      <thead>
@@ -110,7 +110,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BIM</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button" target="_blank">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button" target="_blank">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button">Button</a></p>
                            </div>
                    </div>
                    </div>
@@ -120,7 +120,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>MDM3.0</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button" target="_blank">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after" target="_blank" role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after" role="button">Button</a></p>
                            </div>
                        </div>
                    </div>
@@ -130,12 +130,111 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BOMCenter</h3>
                                <p>企业内部项目</p>
-                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button" target="_blank">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after"  target="_blank">Button</a></p>
+                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after">Button</a></p>
                            </div>
                        </div>
                    </div>
            </div>
     }
+});
+let ProjectFrom=React.createClass({
+   componentDidMount(){
+       $(function () {
+           $('#myTab a:last').tab('show')
+       })
+    },
+   render(){
+      return <div>
+                  <ul className="nav nav-tabs" role="tablist" id="myTab">
+                      <li role="presentation" className="active"><a href="#home" role="tab" data-toggle="tab">金大地</a></li>
+                      <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">嘟嘟医生</a></li>
+                      <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">立川离心机</a></li>
+                      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+                  </ul>
+                  <div className="tab-content">
+                      <div role="tabpanel" className="tab-pane active" id="home">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>描述</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>金大地地产</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.jddjt.com/About.asp?id=1" target="_blank">江苏金大地房地产开发有限责任公司是... </a></td>
+                                  <td><a href="http://www.jddjt.com/" target="_blank">http://www.jddjt.com/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div role="tabpanel" className="tab-pane" id="profile">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>描述</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>嘟嘟医生</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.ziseyiliao.com/about-us.html" target="_blank">致力于搭建微信医患服务平台，根据... </a></td>
+                                  <td><a href="http://www.ziseyiliao.com/" target="_blank">http://www.ziseyiliao.com/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div role="tabpanel" className="tab-pane" id="messages">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>描述</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>立川离心机</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.lch-centrifuge.com/about.php?pid=2" target="_blank">立川卧螺离心机 在固液分离应用中性能优异... </a></td>
+                                  <td><a href="http://www.lch-centrifuge.com/" target="_blank">http://www.lch-centrifuge.com/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div role="tabpanel" className="tab-pane" id="settings">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>描述</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>金大地地产</td>
+                                  <td>根据psd图纸实现web页面以及js</td>
+                                  <td><a href="http://www.elboo.cn/list.php?pid=1&ty=9" target="_blank">作为德国品牌，ELBOO产品秉承德国精益求精... </a></td>
+                                  <td><a href="http://www.elboo.cn/" target="_blank">http://www.elboo.cn/</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+             </div>
+   }
 });
 let Technology = React.createClass({
     render(){
@@ -155,28 +254,28 @@ let Technology = React.createClass({
             <div className="panel page-header">自我评价各项技能熟练度</div>
             <div className="progress">
                 <div className="progress-bar progress-bar-success " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={style80}>
-                    javascript+jQuery
+                    javascript+jQuery 8分
                 </div>
             </div>
             <div className="progress">
                 <div className="progress-bar progress-bar-info " role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style={style80}>
-                    html5+css3+Bootstrap
+                    html5+css3+Bootstrap 8分
                 </div>
             </div>
             <div className="progress">
                 <div className="progress-bar progress-bar-warning " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={style70}>
-                    React+React-Router+Easyui
+                    React+React-Router+Easyui 7分
                 </div>
             </div>
             <div className="progress">
                 <div className="progress-bar progress-bar-danger " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={style60}>
-                    gulp
+                    node 6分
                 </div>
             </div>
             <div className="panel panel-footer">还有一些了解平时有关注过的,也能简单使用
                 <span className="label label-default">Angule1</span>
                 <span className="label label-primary">Vue</span>
-                <span className="label label-success">node</span>
+                <span className="label label-success">gulp</span>
                 <span className="label label-info">webpack</span>
                 <span className="label label-warning">Zepto</span>
                 <span className="label label-danger">Swiper</span></div>
@@ -244,6 +343,7 @@ let AppMain=React.createClass({
                 <div className="container">
                    <FormMe/>
                    <Project/>
+                   <ProjectFrom/>
                    <Technology/>
                    <Future/>
                 </div>
