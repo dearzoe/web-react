@@ -19,7 +19,7 @@ let Nav = React.createClass({
                             </a>
                             <ul style={style} className="dropdown-menu" role="menu">
                                 <li><a href="#technology">技术自我打分</a></li>
-                                <li><a href="#future">未来规划</a></li>
+                                <li><a href="#future">兴趣爱好</a></li>
                                 <li className="divider"></li>
                                 <li><a href="https://github.com/dearzoe"  style={style} target="_blank">MyGitHub</a></li>
                             </ul>
@@ -49,6 +49,9 @@ let Jumbotron = React.createClass({
     }
 });
 let FormMe = React.createClass({
+    closed(){
+      window.close();
+    },
    render(){
        let warning={
          "color":"red"
@@ -61,7 +64,7 @@ let FormMe = React.createClass({
                  <div className="panel panel-default">
                    <div className="panel-heading">自我介绍</div>
                    <div className="panel-body">
-                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，所以对于坚持想要本专业以及不喜欢培训出来的Leader当您看到这个<span style={warning}>***</span>重点标识符的时候就可以关上网页继续寻找您的理想下属了。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more}>更多/技术自我打分</a></p>
+                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，并且从事这份工作有一年半的时间，很享受工作中的种种挑战。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more}>更多/技术自我打分</a></p>
                  </div>
                  <table className="table table-bordered">
                      <thead>
@@ -351,10 +354,10 @@ let Future =React.createClass({
     render(){
         return <div id="future">
                  <div className="panel page-header">
-                     对于未来的规划
+                     兴趣爱好
                  </div>
                  <div className="panel page-body">
-                     首先是先是对未来的工作的一个期望，就是希望自己能够长时间在一家公司能够不断的进步，以及想不断地的挑战自己，同时考取一些证书，像PMP之类的，并且与公司共同成长。
+                     喜欢参加集体活动，爱打羽毛球，喜欢看新闻，看动漫(国产)，对尤克里里感兴趣。
                  </div>
                </div>
     }
