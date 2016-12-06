@@ -113,7 +113,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BIM</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11718.aspx" className="btn btn-primary" role="button"  target="_blank">项目介绍</a> <a href="#" data-toggle="modal" data-target="#after" className="btn btn-default" role="button">Button</a></p>
                            </div>
                    </div>
                    </div>
@@ -123,7 +123,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>MDM3.0</h3>
                                <p>企业内部项目</p>
-                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after" role="button">Button</a></p>
+                               <p><a href="http://www.crrcgc.cc/g11719.aspx" className="btn btn-primary" role="button"  target="_blank">项目介绍</a> <a href="#" className="btn btn-default" data-toggle="modal" data-target="#after" role="button">Button</a></p>
                            </div>
                        </div>
                    </div>
@@ -133,7 +133,7 @@ let Project = React.createClass({
                            <div className="caption">
                                <h3>BOMCenter</h3>
                                <p>企业内部项目</p>
-                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after">Button</a></p>
+                               <p><a className="btn btn-danger" data-toggle="modal" data-target="#about" role="button"  target="_blank">项目介绍</a> <a href="#" className="btn btn-default" role="button" data-toggle="modal" data-target="#after">Button</a></p>
                            </div>
                        </div>
                    </div>
