@@ -64,7 +64,8 @@ let FormMe = React.createClass({
                  <div className="panel panel-default">
                    <div className="panel-heading">自我介绍</div>
                    <div className="panel-body">
-                       <p>开场很直接，我直接说一下我的经历吧，大学学的不是计算机专业的我抱着对计算机的热爱喜欢上了IT行业，毕业后有报培训班系统学习web前端，并且从事这份工作有一年半的时间，很享受工作中的种种挑战。在这一年多的工作中，自己主要负责使用easyui框架写前端页面，以及JS处理前后台的数据。因为是国企，工作并不忙，所以平时也有接一些其他的工作，和朋友合作一些其他项目，包括App,H5以及一些企业建站等项目，也让自己没有把基础的忘记，并且平时有自学一些自己感兴趣的东西，像React,es6,Webpack,Gulp等<a href="#technology" style={more}>更多/技术自我打分</a></p>
+                       <p>两年的军旅生涯中不但锻炼了我极强的独立工作能力，且培养了我很强的责任心和团队意识，能够很好的沟通、协调团队内部工作；在讲师工作中深刻体会到充分了解客户需求，并针对需求制定工作、培训计划的对整个项目按时、准确完成的重要性；在中车工作期间能够按要、按时完成代码编写与项目后期维护工作。
+	性格开朗外向的我热爱生活，热爱学习，抗压能力强。喜欢挑战，喜欢一切新奇的事物，善于解决工作和生活中各种问题，乐于助人，乐于奉献。您别看我经验不多，我会的可不少，奉上简历，期待加入<a href="#technology" style={more}>更多/技术自我打分</a></p>
                  </div>
                  <table className="table table-bordered">
                      <thead>
@@ -77,16 +78,16 @@ let FormMe = React.createClass({
                      </thead>
                      <tbody>
                        <tr>
-                           <td>胡文哲</td>
-                           <td>一年半</td>
-                           <td>Wed前端(希望是React方向)</td>
-                           <td>8-10K</td>
+                           <td>李晓伟</td>
+                           <td>5年</td>
+                           <td>Wed前端</td>
+                           <td>7-9K</td>
                        </tr>
                      </tbody>
                      <tbody>
                        <tr className="warning">
                            <th className="col-md-3">学历</th>
-                           <th className="col-md-3">住址</th>
+                           <th className="col-md-3">籍贯</th>
                            <th className="col-md-3">电话</th>
                            <th className="col-md-3">邮箱</th>
                        </tr>
@@ -94,9 +95,9 @@ let FormMe = React.createClass({
                      <tbody>
                        <tr>
                            <td>本科</td>
-                           <td>13号线</td>
-                           <td>15910377030</td>
-                           <td>825846102@qq.com</td>
+                           <td>北京</td>
+                           <td>18301260309</td>
+                           <td>513342606@qq.com</td>
                        </tr>
                      </tbody>
                  </table>
@@ -156,6 +157,7 @@ let ProjectFrom=React.createClass({
                       <li role="presentation"><a href="#payun" role="tab" data-toggle="tab">帕云</a></li>
                       <li role="presentation"><a href="#hulu" role="tab" data-toggle="tab">万达因</a></li>
                       <li role="presentation"><a href="#shouji" role="tab" data-toggle="tab">肖邦</a></li>
+                      <li role="presentation"><a href="#zhong" role="tab" data-toggle="tab">中财保</a></li>
                   </ul>
                   <div className="tab-content">
                       <div role="tabpanel" className="tab-pane active" id="home">
@@ -298,6 +300,26 @@ let ProjectFrom=React.createClass({
                               </tbody>
                           </table>
                       </div>
+                     <div role="tabpanel" className="tab-pane" id="zhong">
+                          <table className="table table-hover">
+                              <tbody>
+                              <tr>
+                                  <td>名称</td>
+                                  <td>职责</td>
+                                  <td>项目介绍</td>
+                                  <td>域名</td>
+                              </tr>
+                              </tbody>
+                              <tbody>
+                              <tr>
+                                  <td>中财保</td>
+                                  <td>车险后台管理系统</td>
+                                  <td><a href="" target="_blank">未上线</a></td>、
+                                  <td><a href="" target="_blank">localhost:</a></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
                   </div>
              </div>
    }
@@ -331,17 +353,17 @@ let Technology = React.createClass({
             </div>
             <div className="progress">
                 <div className="progress-bar progress-bar-warning " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={style70}>
-                    React+React-Router+Easyui 7分
+                    Vue+Vue-Router+Easyui 7分
                 </div>
             </div>
             <div className="progress">
-                <div className="progress-bar progress-bar-danger " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={style60}>
-                    node 6分
+                <div className="progress-bar progress-bar-danger " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={style50}>
+                    node 5分
                 </div>
             </div>
             <div className="panel panel-footer">还有一些了解平时有关注过的,也能简单使用
                 <span className="label label-default">Angule1</span>
-                <span className="label label-primary">Vue</span>
+                <span className="label label-primary">React</span>
                 <span className="label label-success">gulp</span>
                 <span className="label label-info">webpack</span>
                 <span className="label label-warning">Zepto</span>
@@ -357,7 +379,7 @@ let Future =React.createClass({
                      兴趣爱好
                  </div>
                  <div className="panel page-body">
-                     喜欢参加集体活动，爱打羽毛球，喜欢看新闻，看动漫(国产)，对尤克里里感兴趣。
+                     健身，旅行，各项运动，魔方
                  </div>
                </div>
     }
@@ -391,7 +413,7 @@ let Footer = React.createClass({
                             <div className="col-lg-6">
 
                             </div>
-                        </div><span class="label label-default" style={end}>@huwenzhe 2016.12.1 02:09</span>
+                        </div><span class="label label-default" style={end}>@lixiaowei 2017.2</span>
                     </div>
                </div>
     }
